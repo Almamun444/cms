@@ -42,7 +42,7 @@
                                 <a href="posts.php">View Post</a>
                             </li>
                             <li>
-                                <a href="#">Add Post</a>
+                                <a href="posts.php?source=add_post">Add Post</a>
                             </li>
                         </ul>
                     </li>
@@ -57,7 +57,7 @@
                     </li> -->
                  
                     <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i>Comments</a>
+                        <a href="comments.php"><i class="fa fa-fw fa-dashboard"></i>Comments</a>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i>Uers<i class="fa fa-fw fa-caret-down"></i></a>

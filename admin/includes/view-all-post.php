@@ -44,8 +44,24 @@
             echo "<td>$post_date</td>";
             echo "<td>$post_comment_count</td>";
             echo "<td>$post_status</td>";
+            echo "<td><a href='posts.php?delete={$post_id}'>Delete</a></td>";
             echo "</tr>";
         }
     ?>
         </tbody>
     </table>
+
+    <?php 
+
+        if(isset($_GET['delete()'])) {
+          $delete_post = $_GET['delete'];
+
+          $query = "DELETE FROM posts WHERE post_id = {$delete_post} ";
+          $delete_post_query = mysqli_query($connection, $query);
+
+          if (!$delete_post_query) {
+             die("Query failed" . mysqli_error($connection));
+        }
+    }
+
+    ?>
